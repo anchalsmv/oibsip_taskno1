@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --gradient: linear-gradient(to right,#ab35c9,#e42c2c);
+}
+
+.mainbd {
+  background: var(--gradient);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  -webkit-animation: backanimation 10s ease-in-out infinite;
+          animation: backanimation 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes backanimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes backanimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 1vh;
+  font-size: 4vmax;
+  font-family: 'Poiret One';
+  color: white;
+  -webkit-animation: rangbadal 5s ease-in-out infinite;
+          animation: rangbadal 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rangbadal {
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes rangbadal {
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.main {
+  height: 85vh;
+  width: 90vw;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35vw 42vw;
+      grid-template-columns: 35vw 42vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2.5vh;
+}
+
+.main .left {
+  width: 42vw;
+  height: 80vh;
+  background-color: transparent;
+  color: white;
+  font-size: 5vmax;
+}
+
+.main #Main-head {
+  font-family: 'Quicksand';
+  font-size: 5vmax;
+  margin-top: 2vmax;
+  margin-bottom: 4vmax;
+  font-weight: bolder;
+}
+
+.main #Sub-head1 {
+  font-size: 2vmax;
+  font-family: 'Poiret One';
+}
+
+.main #Sub-head2 {
+  font-size: 2vmax;
+  padding-bottom: 2vmax;
+  font-family: 'Poiret One';
+}
+
+.main p {
+  line-height: 2vmax;
+  font-size: 1.5vmax;
+}
+
+.main #se {
+  border-style: outset;
+  border-radius: 10%;
+  font-size: 2vmax;
+}
+
+.main .right {
+  width: 42vw;
+  height: 80vh;
+  margin-left: 15%;
+  background-color: transparent;
+}
+
+.main .right .iphn {
+  width: 42vw;
+  height: 80vh;
+  border-radius: 10%;
+}
+/*# sourceMappingURL=Style.css.map */
